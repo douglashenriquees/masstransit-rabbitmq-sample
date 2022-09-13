@@ -5,9 +5,8 @@
 * ```dotnet sln solution_name.sln add ./project_name/project_name.csproj```
 * ```dotnet new gitignore```
 * ```cd project_name```
-* ```dotnet add package RabbitMQ.Client```
 * ```dotnet add package MassTransit```
-* ```dotnet add package MassTransit.AspNetCore```
+* ```dotnet add package MassTransit.RabbitMQ```
 
 ## Executando o Projeto
 
