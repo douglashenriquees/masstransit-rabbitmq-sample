@@ -4,7 +4,7 @@ using Shared.Model;
 
 namespace Publisher.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/v1/[controller]")]
 [ApiController]
 public class OrderController : ControllerBase
 {
@@ -15,6 +15,7 @@ public class OrderController : ControllerBase
         _bus = bus ?? throw new ArgumentNullException(nameof(bus));
     }
 
+    [HttpPost]
     public async Task<IActionResult> CreateTicket(Ticket ticket)
     {
         if (ticket != null)
