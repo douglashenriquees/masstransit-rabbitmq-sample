@@ -6,6 +6,8 @@
 * ```dotnet new gitignore```
 * ```cd project_name```
 * ```dotnet add package RabbitMQ.Client```
+* ```dotnet add package MassTransit```
+* ```dotnet add package MassTransit.AspNetCore```
 
 ## Executando o Projeto
 
