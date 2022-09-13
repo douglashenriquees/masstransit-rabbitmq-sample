@@ -22,7 +22,7 @@ public class OrderController : ControllerBase
         {
             ticket.Booked = DateTime.Now;
 
-            var uri = new Uri("rabbitmq://localhost/orderTicketQueue");
+            var uri = new Uri("rabbitmq://localhost/orderTicketQueue"); // nome da fila
 
             var endPoint = await _bus.GetSendEndpoint(uri);
 
